@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/hero.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/uv.css">
+    <link rel="stylesheet" href="styles/indicator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Sun Safety Webapp</title>
+</head>
+<body>
+    <!-- Parallax Sun -->
+<div class="parallax-sun">☀️</div>
+    <main>
+        <section class="hero container" id="hero">
+            
+            <h1 class="hero__title">
+                Stay Safe in the <br />
+                Sun 🌞
+            </h1>
+            <p class="hero__description">
+                Protect yourself from harmful UV rays by staying informed.</strong> Below is the live UV index for your location, along with an interactive guide to interpret it.
+            </p>
+        <!-- UV Index and Sun Image Section -->
+        <div class="sun">
+            <img src="images/sun__high.png" alt="Sun" class="header__sun">
+            <div class="uv__container">
+                <h6>Current UV Index (Live)</h6>
+                <h3 class="uvIndex">Loading...</h3>
+            </div>
+        </div>
+        <!--Uv Indicator-->
+        <div class="container">
+            <div class="indicator__container">
+                <div class="indicator__pointer" id="sun__pointer" style="bottom: 0;">👉</div>
+            </div>
+            <div class="indicator__labels">
+                <div class="label">Extreme (11+)</div>
+                <div class="label">Very High (8-10)</div>
+                <div class="label">High (6-7)</div>
+                <div class="label">Moderate (3-5)</div>
+                <div class="label">Low (0-2)</div>
+            </div>
+        </div>
+         <!-- Sun Safety Tips Section -->
+         <section class="tips">
+            <div id="uv-card" class="card">
+                <div class="uvIndex" >Tips</div>
+                <div class="tips__content" id="tips__content">Please wait while we load tips for the current UV Index.</div>
+                <div class="card-footer">Stay safe under the sun! ☀️</div>
+              </div>
+        </section>
+
+        <!--details-->
+         <!-- Section 1: What -->
+         <div class="section">
+            <h2>🌞 What is Sun Safety?</h2>
+            <p>
+                Sun safety involves protecting yourself from the harmful effects of the sun's UV radiation, which can lead to <span class="highlight">skin damage</span>, <span class="highlight">premature aging</span>, and even <span class="highlight">skin cancer</span>.
+            </p>
+            <img  src="images/sunsafteyDemo.png">
+        </div>
+
+        <!-- Section 2: Why -->
+        <div class="section">
+            <h2>🤔 Why Should You Care?</h2>
+            <p>
+                The UV Index measures the strength of the sun’s ultraviolet radiation.
+                 Even on cloudy days, UV rays can reach your skin, increasing the risk
+                  of <span class="highlight">burns</span> and <span class="highlight">health issues</span>. Awareness helps you make informed decisions to <span class="highlight">stay safe</span>.
+            </p>
+            <img src="images/effect.png">
+        </div>
+
+        <!-- Section 3: How -->
+         <section class="details">
+        <div class="section">
+            <h2>🛡️ How to Stay Protected?</h2>
+            <p>
+                Here are a few essential tips to protect yourself:
+            </p>
+            <div class="info-box">
+                <ul>
+                    <li>🧴 Use sunscreen with SPF 30+ and reapply every 2 hours.</li>
+                    <li>🕶️ Wear sunglasses with UV protection.</li>
+                    <li>👒 Use a wide-brimmed hat and protective clothing.</li>
+                    <li>⏰ Avoid direct sun exposure during peak hours (10 AM - 4 PM).</li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="about" class="section lazy-load">
+            <h2>👉About UV Radiation</h2>
+            <p>Ultraviolet (UV) radiation is a form of electromagnetic energy. While it helps our body produce <span class="highlight">Vitamin D</span>, too much UV exposure can cause <span class="highlight">sunburn, skin aging, and increase the risk of skin cancer</span>.</p>
+          </section>
+
+        <!-- Section 4: Try It -->
+        <div class="section">
+            <h2>🚀 Check Your UV Index Now!</h2>
+            <a class="cta-button" href="#hero">Check UV Index</a>
+        </div>
+        </section>
+
+       
+        <!-- Additional Resources Section -->
+        <section class="resources">
+            <h2>Additional Resources</h2>
+            <p>Learn more about sun safety from trusted sources:</p>
+            <ul>
+                <li><a href="https://www.epa.gov/sunsafety" target="_blank">EPA: Sun Safety Tips</a></li>
+            </ul>
+        </section>
+
+        
+        
+        
+    </main>
+    <footer>
+        <footer>
+            <p>Made with ☀️ by Sp</p>
+          </footer>
+    </footer>
+    
+    <script src="script.js" ></script>
+</body>
+</html>
