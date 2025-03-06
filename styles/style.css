@@ -1,0 +1,190 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr-light: #f1f5f9;
+    --clr-dark:   #070a13;
+    --clr-slate400: #94a3b8;
+    --clr-slate600: #475569;
+    --clr-slate800: #1e293b;
+    --clr-rose: #e11d48;
+    --clr-indigo: #4f46e5;
+    --clr-sun: #f39c12;
+
+  
+    /* sizes */
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+  }
+
+body {
+    font-family: 'General Sans', sans-serif;
+    color: var(--clr-light);
+    background: var(--clr-dark);
+    background-image: url(/images/nikhil-yagnic--cb0QupVZYk-unsplash.jpg); 
+    /* background-image: url(/images/Pin\ by\ hitomi\ yuki\ on\ 藝術\ _\ Grid\ wallpaper\,\ Iphone\ background\ wallpaper\,\ Aesthetic\ pastel\ wallpaper.jpeg); */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Fade-in and move-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* details */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--clr-dark)
+}
+
+.section p {
+    font-size: 1em;
+    color: var(--clr-slate800);
+    margin-bottom: 15px;
+    font-weight: 450;
+}
+
+.tips__content {
+    color: var(--clr-dark);
+}
+
+/* Additional Resources Section */
+.resources {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.resources:hover {
+    transform: scale(1.02);
+}
+
+.resources h2 {
+    color: var(--clr-dark);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.resources p {
+    font-size: 1rem;
+    color: var(--clr-slate800);
+    margin-bottom: 10px;
+}
+
+.resources ul {
+    list-style-type: none;
+}
+
+.resources li {
+    margin: 8px 0;
+}
+
+.resources a {
+    color: var(--clr-indigo);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+
+.cta-button {
+    background-color: #f39c12;
+    color: #121212;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+.highlight {
+    color: var(--clr-rose);
+    font-weight: bold;
+}
+
+.info-box {
+    background: var(--clr-dark);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+/* images styling */
+img {
+    width: 300px;
+    border-radius: 8px;
+    margin: 10px;
+    @media (min-width: 1024px){
+        width: 500px;
+
+    }
+}
+
+/* Parallax Sun */
+
+  
+  @keyframes moveSun {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(0, 20px); }
+  }
+  @media(min-width: 1024px) {
+    .parallax-sun {
+        position: fixed;
+        bottom: -200px; /* Adjusts position to avoid cutting off the sun */
+        right: -200px; /* Pushes the sun further to the left */
+        font-size: 450px; /* Makes the sun bigger */
+        transform: translate(0, 0);
+        z-index: -1;
+        opacity: 0.8;
+        animation: moveSun 4s infinite alternate;
+      }
+
+  }
+  

@@ -1,0 +1,106 @@
+/* UV Index and Sun Image Styling */
+.sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+     /* background-color: var(--clr-rose);  */
+    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.sun:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.header__sun {
+    width: 180px;
+    margin-right: 20px;
+ mix-blend-mode: darken;
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.uv__container h6 {
+    font-size: 1rem;
+    color: var(--clr-rose);
+}
+
+.uvIndex {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #777;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.card {
+width: 90%;
+max-width: 400px;
+background: white;
+border-radius: 15px;
+padding: 20px;
+opacity: 0;
+transform: translateY(30px);
+animation: fadeInUp 0.5s forwards;
+}
+.card-title {
+font-size: 1.5em;
+font-weight: bold;
+margin-bottom: 10px;
+color: #f39c12;
+}
+.card-content {
+font-size: 1em;
+color: #555;
+line-height: 1.5;
+}
+.card-footer {
+margin-top: 20px;
+font-size: 0.8em;
+color: #999;
+}
+@keyframes fadeInUp {
+from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+/* Cursor Animation */
+.uvIndex::after {
+    content: '.'; /* Creating the cursor */
+    position: absolute;
+    top: 0;
+    right: -10px; /* Position the cursor next to the text */
+    font-size: 3rem; /* Size of the cursor */
+    color: #333; /* Match the text color */
+    animation: blink 1s infinite step-start; /* Blink animation */
+}
+
+/* Blink animation for the cursor */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

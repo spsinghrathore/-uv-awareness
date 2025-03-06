@@ -1,0 +1,32 @@
+/* hero */
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+
+  
+  .hero__title {
+    color: var(--clr-dark);
+    text-transform: uppercase;
+    font-size: var(--size-5xl);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+  }
+  @media (min-width:1024px){
+    .hero__title{
+    font-size: var(--size-8xl);
+    }
+  }
+  
+  .hero__description {
+    max-width: 60ch;
+    font-size: var(--size-lg);
+    color: var(--clr-dark);
+    font-weight: 500;
+  }
